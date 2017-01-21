@@ -65,6 +65,7 @@ Class RestGet extends Connection implements Connector
      * You can add
      * example: Sort ASC../ProfitRestServices/connectors/Orderbyfieldids=Field1,Field2
      * example: Sort DESC..../ProfitRestServices/connectors/Orderbyfieldids=-Field1,-Field2
+     * https://static-kb.afas.nl/datafiles/help/2_9_7/SE/NL/index.htm#App_Cnr_Rest_GET.htm
      * @param $filters
      */
     public function setFilters($filters)
