@@ -1,12 +1,4 @@
-# Profit Rest Services (JSON)
-A simple Afas Rest Connector Class
-
-You need a token, afas connector id and a participant number
-
-<pre>
-
 <?php
-
 require_once 'lib/connector/Connection.php';
 
 use connector\RestGet as RestGet;
