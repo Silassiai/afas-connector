@@ -74,7 +74,7 @@ Class RestGet extends Connection implements Connector
     }
 
     /**
-     * Creates an readable response result in array
+     * Creates an readable response result as array
      * @param $response
      * @return string
      */
