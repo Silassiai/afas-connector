@@ -18,7 +18,7 @@ namespace connector;
 Class RestGet extends Connection implements Connector
 {
     /**
-     * use this for options
+     * use this for options or filters
      */
     const SKIP = 'skip';
     const TAKE = 'take';
