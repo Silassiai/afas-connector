@@ -3,8 +3,7 @@ A simple Afas Rest Connector Class
 
 You need a token, afas connector id and a participant number
 
-<pre>
-
+```php
 <?php
 
 require_once 'lib/connector/Connection.php';
@@ -39,3 +38,4 @@ if($result->status){
 } else {
     var_dump($result->error_msg);
 }
+```
