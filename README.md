@@ -1,7 +1,11 @@
 # Profit Rest Services (JSON)
 A simple Afas Rest Connector Class
 
-You need a token, afas connector id and a participant number
+What you need
+-------------
+* Afas Token
+* Afas connector id
+* Afas participant number
 
 ```php
 <?php
