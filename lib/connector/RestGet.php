@@ -134,4 +134,14 @@ Class RestGet extends Connection implements Connector
         $this->result->data = $content;
         return $this->result;
     }
+    
+    /**
+     * get keys from result data
+     * @param $obj
+     * @return array of keys from result
+     */
+    public static function objectKeys($obj){
+        $rows = json_decode($obj->data)->rows;
+        return array_keys(get_object_vars(current($rows)));
+    }
 }
