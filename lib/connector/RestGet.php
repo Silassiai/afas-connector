@@ -22,9 +22,10 @@ Class RestGet extends Connection implements Connector
      */
     const SKIP = 'skip';
     const TAKE = 'take';
-    const OPERATORTYPES = 'operatortypes';
-    const FILTERFIELDIDS = 'filterfieldids';
-    const FILTERVALUES = 'filtervalues';
+    const OPERATOR_TYPES = 'operatortypes';
+    const FILTERFIELD_IDS = 'filterfieldids';
+    const FILTER_VALUES = 'filtervalues';
+    const ORDERBY_FIELD = 'Orderbyfieldids';
 
     /**
      * RestGet constructor.
