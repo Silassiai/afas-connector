@@ -20,13 +20,17 @@ $acg = new RestGet([
     'participant' => YOUR_PARTICIPANT_NUMBER
 ]);
 
+// setFilters is optional, you can add filters with setOptions as wel
 // Filter Documentation: https://static-kb.afas.nl/datafiles/help/2_9_7/SE/NL/index.htm#App_Cnr_Rest_GET.htm
 // $acg->setFilters('filterfieldids='. urlencode('Naam') .'&filtervalues='.urlencode('Silas de Rooy').'&operatortypes=Type');
 
 $acg->setOptions([
     RestGet::SKIP => 0,
     RestGet::TAKE => 10,
-    RestGet::OPERATORTYPES => 1
+    // RestGet::ORDERBY_FIELD => '-Number',
+    // RestGet::FILTERFIELD_IDS => 'Number',
+    // RestGet::FILTER_VALUES => '37317',
+    RestGet::OPERATOR_TYPES => 1
 ]);
 
 $result = $acg->getResults();
