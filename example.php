@@ -19,6 +19,7 @@ $acg->setOptions([
 ]);
 
 $result = $acg->getResults();
+$keys = RestGet::objectKeys($result);
 
 // Show final Request Url
 // This can be used for debugging purposes
