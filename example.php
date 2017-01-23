@@ -19,7 +19,7 @@ $acg->setOptions([
     // RestGet::ORDERBY_FIELD => '-Number',
     // RestGet::FILTERFIELD_IDS => 'Number',
     // RestGet::FILTER_VALUES => '37317',
-    RestGet::OPERATOR_TYPES => 1
+    // RestGet::OPERATOR_TYPES => 4
 ]);
 
 $result = $acg->getResults();
