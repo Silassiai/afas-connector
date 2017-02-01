@@ -34,7 +34,7 @@ Class RestGet extends Connection implements Connector
     public function __construct(array $credentials)
     {
         parent::__construct($credentials);
-        $this->target_url = "https://$this->participant.afasonlineconnector.nl/ProfitRestServices/connectors/" . $this->connector_id;
+        $this->target_url = "https://$this->participant/ProfitRestServices/connectors/" . $this->connector_id;
         $this->header = [
 //            'Content-Type: text/xml; charset="utf-8"',
             'Accept: text/html',
