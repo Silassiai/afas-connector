@@ -126,7 +126,8 @@ Class RestGet extends Connection implements Connector
             echo '<pre>';
             $this->result->status = false;
             $this->result->error_msg = $curl_errno > 0 ? "cURL Error ($curl_errno): $curl_error\n" : $headers;
-
+            unset($this->result->data);
+            
             return $this->result;
 
         }
