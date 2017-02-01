@@ -6,6 +6,7 @@ use connector\RestGet as RestGet;
 $acg = new RestGet([
     'token' => YOUR_AFAS_TOKEN,
     'connector_id' => YOUR_AFAS_CONNECTORID,
+    // afas online example: '12345.afasonlineconnector.nl'
     'participant' => YOUR_PARTICIPANT_NUMBER
 ]);
 
