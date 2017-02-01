@@ -49,8 +49,7 @@ Class RestGet extends Connection implements Connector
      * @param array $options
      */
     public function setOptions(array $options)
-    {
-        $this->options = '';
+    {      
         $count = 0;
         $p = '?';
         foreach ($options as $option => $value) {
