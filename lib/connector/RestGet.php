@@ -130,6 +130,13 @@ Class RestGet extends Connection implements Connector
             
             return $this->result;
 
+        } else if(empty(json_decode($content)->rows)){
+
+            $this->result->status = false;
+            $this->result->error_msg = 'No data received.';
+
+            return $this->result;
+
         }
 
         $this->result->status = true;
