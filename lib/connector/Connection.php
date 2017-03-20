@@ -6,8 +6,8 @@
 namespace connector;
 use stdClass as stdClass;
 
-require_once 'Connector.php';
-require_once 'RestGet.php';
+require_once dirname(__FILE__) . '/Connector.php';
+require_once dirname(__FILE__) . '/RestGet.php';
 //require_once 'SoapGet.php';
 
 class Connection{
